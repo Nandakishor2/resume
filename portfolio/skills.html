@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <script>
+        window.onload = function(){
+            audio = new Audio("skills.mp3")
+            audio.play()
+        }
+    </script>
+    <style>
+        .circle {
+            width: 100%;
+            height: 100%;
+            fill: transparent;
+            stroke-width: 2;
+            stroke: var(--clr);
+            stroke-dasharray: 440;
+            stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+            transition: stroke-dashoffset 0.5s ease;
+            animation: animate 5s linear forwards;
+            
+
+        }
+
+        @keyframes animate {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+<body style="display: flex;justify-content: center;align-content: center;min-height: 100vh;background-color: #222;">
+    <div
+        style="position: relative;display: flex;justify-content: center;align-items: center;flex-wrap: wrap;gap: 40px;">
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h2 style=" color: white;">HTML</h2>
+                <span style=" color: white;margin-left: 20px;">
+                    86%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#04fc43;--num:86 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h2 style=" color: white;">CSS</h2>
+                <span style=" color: white;margin-left: 8px;">
+                    52%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#fc04a1;--num:52 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h2 style=" color: white;">Javascript</h2>
+                <span style=" color: white;margin-left: 41px;">
+                    75%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#dffc04;--num:75 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h2 style=" color: white;">Python</h2>
+                <span style=" color: white;margin-left: 20px;">
+                    85%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#2a3dce;--num:85 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h2 style=" color: white;">Django</h2>
+                <span style=" color: white;margin-left: 20px;">
+                    85%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :rgb(211, 69, 12);--num:85 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h3 style=" color: white;">Django-Rest</h3>
+                <span style=" color: white;margin-left: 32px;">
+                    80%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#04fc43;--num:80 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h1 style=" color: white;">Java</h1>
+                <span style=" color: white;margin-left: 20px;">
+                    50%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#d83fd0;--num:50 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h3 style=" color: white;">Android-Studio</h3>
+                <span style=" color: white;margin-left: 50px;">
+                    70%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#fcfcfc;--num:70 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="card"
+            style="position: relative; width: 200px; height: 200px; background-color: #2a2a2a; display: flex; align-items: center; justify-content: center;">
+            <div style="position: absolute; color: var(--clr)">
+                <h3 style=" color: white;">Flutter</h3>
+                <span style=" color: white;margin-left: 10px;">
+                    10%
+                </span>
+            </div>
+
+            <div style="position: relative; width: 150px; height: 150px;--clr :#5965eb;--num:10 ">
+
+                <svg style="position: relative; width: 150px; height: 150px;transform: rotate(270deg);">
+
+                    <circle cx="70" cy="70" r="70"
+                        style="width: 100%; height: 100%; fill: transparent; stroke-width: 2; stroke: #222;"></circle>
+                    <circle class="circle" cx="70" cy="70" r="70"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+</body>
+<a href="contact.html"
+    style="border-radius: 20px; border: 1px solid #fff;padding: 8px 20px;height: fit-content; background-color: rgb(149, 149, 225);position: absolute;top:530px;right:23px;cursor: pointer;text-decoration: none;">
+    Contact Me => </a>
+<a href="projects.html"
+    style="border-radius: 20px; border: 1px solid #fff;padding: 8px 20px;height: fit-content; background-color: rgb(149, 149, 225);position: absolute;top:530px;left:7px;cursor: pointer;text-decoration: none;">
+    <= Go To Projects </a>
+
+</html>

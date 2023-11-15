@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script>
+    window.onload = function(){
+        audio = new Audio("projects.mp3")
+        audio.play()
+    }
+</script>
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: fit-content;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%;border-radius: 55%;">
+                    <img src="parkspot.png" style="border-radius: 45%;border:4px solid blue ;" alt="">
+
+                </div>
+                <h3>PARKSPOT</h3>
+                <div class="description">
+                    The parking detection app, merging Android and Flask, utilizes computer vision and a machine
+                    learning model to provide real-time information on parking space availability. Seamless connectivity
+                    facilitates efficient communication between the Android app and Flask server. The app captures live
+                    video frames, processes them with OpenCV, and classifies parking spaces as empty or occupied.
+                    Storing data in a CSV file allows for simplicity in smaller-scale projects, though future
+                    enhancements might involve transitioning to a more robust database system for scalability. This
+                    innovation reflects the transformative potential of technology in simplifying urban challenges and
+                    enhancing the overall driving experience.
+                </div>
+                <a href="https://github.com/Nandakishor2/Parkspot.git"
+                    style="text-decoration: none;border: solid ;background: transparent;margin-top: 5px;border-radius: 30px; padding: 5px 5px;">GO
+                    to Github</a>
+            </div>
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%;border-radius: 55%;">
+                    <img src="nethra.png" style="border-radius: 45%;border:4px solid blue ;" alt="">
+
+                </div>
+                <h3>NETHRA</h3>
+                <div class="description">
+                    The envisioned system seamlessly integrates depth sensing and computer vision to aid individuals
+                    with visual impairments. Utilizing advanced depth-sensing hardware and OpenCV, the system accurately
+                    measures distances and identifies individuals in real-time. Distances are converted to user-friendly
+                    units, spoken through Python's Text-to-Speech (TTS), offering immediate feedback. A user-friendly
+                    interface, employing speech or non-visual cues, enhances interaction. The system operates in
+                    real-time, updating distance information dynamically. The provided Python code initializes the depth
+                    sensor, captures frames, detects people, and delivers spoken feedback.
+                </div>
+                <a href="https://github.com/Nandakishor2/Nethra.git"
+                    style="text-decoration: none;border: solid ;background: transparent;margin-top: 5px;border-radius: 30px; padding: 5px 5px;">GO
+                    to Github</a>
+            </div>
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%;border-radius: 55%;">
+                    <img src="active.png" style="border-radius: 45%;border:4px solid blue ;" alt="">
+
+                </div>
+                <h3>ACTIVE ACRADE</h3>
+                <div class="description">
+                    Active Arcade is an immersive fitness game that leverages Python and computer vision to detect
+                    player movements. In real-time, the system generates bubbles on the screen based on the player's
+                    detected positions. The objective is for the player to physically touch the bubbles using their
+                    hands, accumulating points throughout the dynamic 10-point game. The use of computer vision ensures
+                    a responsive and interactive experience, fostering physical activity and engagement. Active Arcade
+                    represents an innovative fusion of technology and fitness, providing an entertaining and energetic
+                    gaming environment.
+                </div>
+                <a href="https://github.com/Nandakishor2/INTERNSHIPS.git"
+                    style="text-decoration: none;border: solid ;background: transparent;margin-top: 5px;border-radius: 30px; padding: 5px 5px;">GO
+                    to Github</a>
+            </div>
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%;border-radius: 55%;">
+                    <img src="kreeda.png" style="border-radius: 45%;border:4px solid blue ;" alt="">
+
+                </div>
+                <h3>KREEDA.AI</h3>
+                <div class="description">
+                    As a part of internship at IISC Bangalore, we're crafting a Django-based web suite for post-breast
+                    cancer surgery recovery. This platform incorporates real-time body detection via Mediapipe to
+                    establish exercise checkpoints, fostering a personalized and secure exercise routine with a clean
+                    UI. Users can seamlessly track progress and receive immediate feedback on posture during workouts.
+                    The platform, designed for device accessibility, integrates Django Channels for real-time features
+                    while prioritizing data security and user privacy. This collaborative project, rooted in research
+                    and development principles, aims to deliver an efficient and user-centric solution for post-surgery
+                    recovery.
+                </div>
+                <a href="https://github.com/SathvikRaoR/Lymphedema.git"
+                    style="text-decoration: none;border: solid ;background: transparent;margin-top: 5px;border-radius: 30px; padding: 5px 5px;">GO
+                    to Github</a>
+            </div>
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%;border-radius: 55%;">
+                    <img src="upastith.png" style="border-radius: 45%;border:4px solid blue ;" alt="">
+
+                </div>
+                <h3>Upastith</h3>
+                <div class="description">
+                    The Attendance Project, currently in the developmental stage, is a Django-based initiative slated
+                    for completion in the next two months. This project addresses the streamlined management of
+                    attendance records and assignments within educational contexts. Utilizing the Django framework, it
+                    promises a user-friendly interface for ease of data input and retrieval. As development progresses,
+                    features such as real-time attendance tracking, robust assignment management tools, and
+                    comprehensive reporting functionalities will be seamlessly integrated.
+                </div>
+                <a href="https://github.com/Nandakishor2/Upastith.git"
+                    style="text-decoration: none;border: solid ;background: transparent;margin-top: 5px;border-radius: 30px; padding: 5px 5px;">GO
+                    to Github</a>
+            </div>
+
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%;border-radius: 55%;">
+                    <img src="energysync.jpg" style="border-radius: 45%;border:4px solid blue ;" alt="">
+
+                </div>
+                <h3>EMERGISYNC</h3>
+                <div class="description">
+                    The project entails creating a Django-Flutter smart ambulance management system. It detects
+                    ambulances within 1.5 km of signal lights, optimizing traffic flow for their quick passage. The
+                    Django backend includes GPS-based ambulance detection, real-time traffic management, and secure user
+                    authentication. The Flutter front end offers a real-time dashboard for traffic authorities,
+                    displaying current conditions and optimized routes. Key considerations involve legal compliance,
+                    security, scalability, and community engagement. Continuous iteration is emphasized for ongoing
+                    improvement.
+                </div>
+                <a href="https://github.com/Nandakishor2/Upastith.git"
+                    style="text-decoration: none;border: solid ;background: transparent;margin-top: 5px;border-radius: 30px; padding: 5px 5px;">GO
+                    to Github</a>
+            </div>
+            <div class="swiper-slide"
+                style="border-radius:20px;background-color: aliceblue;padding: 10px 12px;display: flex;align-items: center;justify-content: center;flex-direction: column;box-shadow: 15px 10px 10px #888888;;">
+                <div style="width: 60%">
+                    <img src="namaste.gif" width="50%" alt="" ">
+
+                </div>
+                
+                <div class="description" style="margin-top: 23px;">
+                    "Thank you all for your patient engagement in reviewing our projects. Your time is truly appreciated. Now, let's shift focus to the skills cultivated throughout this journey. Beyond the technical aspects, this final-year project has honed problem-solving, critical thinking, teamwork, and project management skills. These competencies are not just integral to our academic success but are poised to be valuable assets in our professional journeys.  again, thank you for your time and attention as we transition into discussing the skills we've acquired."
+                </div>
+                <a href="skills.html"
+                style="border-radius: 20px; border: 1px solid #fff;padding: 8px 20px;height: fit-content; background-color: rgb(149, 149, 225);margin-top: 29px;">
+                Go To Skills =>
+            </a>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <a href="education.html"
+        style="border-radius: 20px; border: 1px solid #fff;padding: 8px 20px;height: fit-content; background-color: rgb(149, 149, 225);position: absolute;bottom:10px;left:40px;cursor: pointer;text-decoration: none;z-index: 100;">
+        <= Go To Education </a>
+            
+
+            <script>
+                var swiper = new Swiper(".mySwiper", {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                });
+            </script>
+</body>
+
+</html>

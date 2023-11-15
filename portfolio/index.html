@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nandakishor</title>
+    <style>
+        .loader {
+            height: 150px;
+            display: flex;
+            align-items: center;
+        }
+
+        .loader .stroke {
+            display: block;
+            position: relative;
+            height: 100%;
+            background-color: white;
+            width: 10px;
+            margin-left: 7px;
+            border-radius: 50px;
+            animation: animate 1.2s linear infinite;
+        }
+
+        
+
+        @keyframes animate {
+            50% {
+                height: 20%;
+            }
+
+            100% {
+                height: 100%;
+            }
+
+        }
+
+        .stroke:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .stroke:nth-child(2) {
+            animation-delay: 0.3s;
+        }
+
+        .stroke:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .stroke:nth-child(4) {
+            animation-delay: 0.9s;
+        }
+
+        .stroke:nth-child(5) {
+            animation-delay: 0.6s;
+        }
+
+        .stroke:nth-child(6) {
+            animation-delay: 0.3s;
+        }
+
+        .stroke:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        .stroke:nth-child(8) {
+            animation-delay: 0.9s;
+        }
+
+        .stroke:nth-child(9) {
+            animation-delay: 0.4s;
+        }
+
+        .stroke:nth-child(10) {
+            animation-delay: 0.6s;
+        }
+
+        .stroke:nth-child(11) {
+            animation-delay: 0.2s;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var currentDate = new Date();
+            var currentHour = currentDate.getHours();
+            if (currentHour < 12) {
+                var audio = new Audio('goodmorning.mp3');
+
+
+            } else if (currentHour >= 12 && currentHour < 16) {
+                var audio = new Audio('goodafternoon.mp3');
+
+            } else {
+                var audio = new Audio('goodevening.mp3');
+
+            }
+            document.getElementById("dis").style.display = ""
+            audio.play();
+            
+            audio.addEventListener('ended', function () {
+                window.location.href = "landing.html"
+            });
+        }
+    </script>
+</head>
+
+<body style="height:fit-content;background-color: black;width: 100%;">
+
+    
+    <div id="dis" class="loader" style="position: absolute;top:263px;left: 40%;display: none;">
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+        <span class="stroke"></span>
+    </div>
+</body>
+
+</html>
